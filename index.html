@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e3e6e6;
+    }
+
+    /* Header */
+    .header {
+      background-color: #131921;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f08804;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      margin: 0 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .nav-items {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-items a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Banner */
+    .banner {
+      background-image: url('https://m.media-amazon.com/images/G/01/digital/video/merch/2024/TV_SVOD/Spring24/GWBleedingHero_FT_SVOD_Spring24_Gen_Aug24_en-US_3000x1200._CB556796327_.jpg');
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Product Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .product h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      font-size: 14px;
+      color: #007185;
+    }
+
+    .product button {
+      background-color: #f0c14b;
+      border: 1px solid #a88734;
+      padding: 6px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #131921;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">amazon</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Amazon...">
+    </div>
+    <div class="nav-items">
+      <a href="#">Sign In</a>
+      <a href="#">Orders</a>
+      <a href="#">Cart</a>
+    </div>
+  </div>
+
+  <div class="banner"></div>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71kZfQA-Y7L._SX679_.jpg" alt="Product 1">
+      <h3>Wireless Headphones</h3>
+      <p>$29.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._SX679_.jpg" alt="Product 2">
+      <h3>Smart Watch</h3>
+      <p>$49.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81mLxMDDsCL._SX679_.jpg" alt="Product 3">
+      <h3>Laptop Bag</h3>
+      <p>$19.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71s1LRpaprL._SX679_.jpg" alt="Product 4">
+      <h3>Bluetooth Speaker</h3>
+      <p>$39.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 Amazon Clone | For educational purposes only
+  </div>
+
+</body>
+</html>
